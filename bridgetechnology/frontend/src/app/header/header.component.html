@@ -43,15 +43,23 @@
 
 
 <div class = "header">
-  <mat-toolbar color="primary">
+  <mat-toolbar class = "header-toolbar" color="primary">
     <mat-toolbar-row class = "top-toolbar">
       <div class = "top-header-container">
         <div class = "top-header">
-          <img src = "https://www.keysight.com/content/dam/keysight/en/img/gnav/keysight-logo.svg">
+          <a href = "#" style = "padding-top: 15px">
+            <img src = "https://www.keysight.com/content/dam/keysight/en/img/gnav/keysight-logo.svg">
+          </a>
           <span class="example-spacer"></span>
-          <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-            <mat-icon>menu</mat-icon>
-          </button>
+          <div style = "margin: auto">
+              <span class = "contact-us-wrapper"><a href = "#" style = "margin: 0; padding:0; font-size: 13px">Contact Us</a></span>
+            <span> | </span>
+            <span>
+              <button mat-icon-button class="search-icon">
+                <mat-icon>search</mat-icon>
+              </button>
+            </span>
+          </div>
         </div>
       </div>
     </mat-toolbar-row>
