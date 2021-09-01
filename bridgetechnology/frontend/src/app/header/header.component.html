@@ -43,25 +43,43 @@
 
 
 <div class = "header">
-  <mat-toolbar color="primary">
-    <mat-toolbar-row>
+  <mat-toolbar class = "header-toolbar" color="primary">
+    <mat-toolbar-row class = "top-toolbar">
       <div class = "top-header-container">
         <div class = "top-header">
-          <img src = "https://www.keysight.com/content/dam/keysight/en/img/gnav/keysight-logo.svg">
+          <a href = "#" style = "padding-top: 15px">
+            <img src = "https://www.keysight.com/content/dam/keysight/en/img/gnav/keysight-logo.svg">
+          </a>
           <span class="example-spacer"></span>
-          <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-            <mat-icon>menu</mat-icon>
-          </button>
+          <div style = "margin: auto">
+              <span class = "contact-us-wrapper"><a href = "#" style = "margin: 0; padding:0; font-size: 13px">Contact Us</a></span>
+            <span> | </span>
+            <span>
+              <button mat-icon-button class="search-icon">
+                <mat-icon>search</mat-icon>
+              </button>
+            </span>
+          </div>
         </div>
       </div>
     </mat-toolbar-row>
 
 
-    <mat-toolbar-row>
+    <mat-toolbar-row class = "secondary-toolbar">
       <div class = "menu-items">
         <ul class = "ul-menu">
           <li><a href = "#">Home</a></li>
-          <li><a href = "#">Solutions</a></li>
+          <li>
+            <a mat-button [matMenuTriggerFor]="menu" class = "drop-down" style = "line-height: initial">Solutions</a>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>bCounted APM</button>
+              <button mat-menu-item>bCounted APC</button>
+              <button mat-menu-item>GoCleanMe</button>
+              <button mat-menu-item>Exit Lane Security</button>
+              <button mat-menu-item>Smart Trash Bin</button>
+
+            </mat-menu>
+          </li>
           <li><a href = "#">Benefits & Solutions</a></li>
           <li><a href = "#">About Bridge Technology</a></li>
         </ul>
