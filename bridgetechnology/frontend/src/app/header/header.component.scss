@@ -120,7 +120,7 @@
 //   }
 // }
 .header-toolbar {
-  padding-bottom: 11px;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 580px){
@@ -162,22 +162,29 @@
   flex-wrap: wrap;
   justify-content: center;
   box-sizing: border-box;
+  align-items: center;
 }
 
 li {
   margin: 0;
   padding: 0;
   list-style: none;
+  overflow: contain;
 }
 
 
 
-a {
+a, .drop-down{
   text-decoration: none;
   color: white;
   text-transform: uppercase;
   padding: 9px 12px;
   font-family: 'Cuprum', sans-serif;
+  font-size: 16px;
+}
+
+.drop-down::hover {
+  background-color: none;
 }
 
 // @media (max-width: 900px){
@@ -200,4 +207,14 @@ a {
     color: white;
     text-transform: uppercase;
     padding: 9px 12px;
+}
+
+
+.mat-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button {
+  display: unset;
+}
+
+
+.mat-toolbar.mat-primary {
+  background: #212121;
 }

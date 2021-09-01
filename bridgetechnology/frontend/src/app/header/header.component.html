@@ -69,7 +69,17 @@
       <div class = "menu-items">
         <ul class = "ul-menu">
           <li><a href = "#">Home</a></li>
-          <li><a href = "#">Solutions</a></li>
+          <li>
+            <a mat-button [matMenuTriggerFor]="menu" class = "drop-down" style = "line-height: initial">Solutions</a>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>bCounted APM</button>
+              <button mat-menu-item>bCounted APC</button>
+              <button mat-menu-item>GoCleanMe</button>
+              <button mat-menu-item>Exit Lane Security</button>
+              <button mat-menu-item>Smart Trash Bin</button>
+
+            </mat-menu>
+          </li>
           <li><a href = "#">Benefits & Solutions</a></li>
           <li><a href = "#">About Bridge Technology</a></li>
         </ul>
