@@ -24,7 +24,7 @@ div {
 .bridge-section-flex {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 }
 
 @media (max-width: 850px) {
@@ -38,7 +38,7 @@ div {
 .bridge-section-flex-second {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 }
 
 @media (max-width: 850px) {
@@ -93,4 +93,15 @@ div {
     margin: auto;
     float: unset;
   }
+}
+
+.our-clients {
+  width: 18%;
+}
+
+
+.our-clients-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
