@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faSubway, faUsers, faLaptop } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-landing-page',
@@ -6,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent implements OnInit {
+  faSubway = faSubway;
+  faUsers = faUsers;
+  faLaptop = faLaptop;
 
   constructor() { }
 
