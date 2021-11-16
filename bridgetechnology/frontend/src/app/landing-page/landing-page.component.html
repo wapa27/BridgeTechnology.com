@@ -14,7 +14,7 @@
       <p style = "width: 75%; margin: auto; line-height: 2; text-align: center;"><fa-icon style = "margin-right: 20px; color: rgb(56,58,60)" class="fa-2x" [icon]="faSubway"></fa-icon><span><strong style = "font-size: 25px; font-family: 'Source Sans Pro', sans-serif;">Automatic People Moving</strong></span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam perferendis autem delectus animi ad dolor dolorum, deleniti quae. Aliquid labore, omnis reprehenderit modi obcaecati quos vero maiores amet quaerat vitae.
         <span>
           <div style = "display: flex; justify-content: center;">
-            <button mat-raised-button color="rgb(56,58,60)" style = "height: 40px; width: 130px; margin-top: 15px">More Info</button>
+            <button mat-raised-button style = "background: #C8CDD0; height: 40px; width: 130px; margin-top: 15px">More Info</button>
           </div>
         </span>
       </p>
@@ -27,7 +27,7 @@
       <p style = "width: 75%; margin: auto; line-height: 2; text-align: center;"><fa-icon style = "margin-right: 20px; color: rgb(56,58,60)" class="fa-2x" [icon]="faUsers"></fa-icon><strong style = "font-size: 25px; font-family: 'Source Sans Pro', sans-serif;">Automatic Passenger Counting</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam perferendis autem delectus animi ad dolor dolorum, deleniti quae. Aliquid labore, omnis reprehenderit modi obcaecati quos vero maiores amet quaerat vitae.
         <span>
           <div style = "display: flex; justify-content: center;">
-            <button mat-raised-button color="rgb(56,58,60)" style = "height: 40px; width: 130px; margin-top: 15px">More Info</button>
+            <button mat-raised-button style = "background: #C8CDD0; height: 40px; width: 130px; margin-top: 15px">More Info</button>
           </div>
         </span>
       </p>
@@ -38,40 +38,41 @@
       <p style = "width: 75%; margin: auto; line-height: 2; text-align: center;"><fa-icon style = "margin-right: 20px; color: rgb(56,58,60)" class="fa-2x" [icon]="faLaptop"></fa-icon><strong style = "font-size: 25px; font-family: 'Source Sans Pro', sans-serif;">Exit Lane Monitoring</strong><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam perferendis autem delectus animi ad dolor dolorum, deleniti quae. Aliquid labore, omnis reprehenderit modi obcaecati quos vero maiores amet quaerat vitae.
         <span>
           <div style = "display: flex; justify-content: center;">
-            <button mat-raised-button color="rgb(56,58,60)" style = "height: 40px; width: 130px; margin-top: 15px">More Info</button>
+            <button mat-raised-button style = "background: #C8CDD0; height: 40px; width: 130px; margin-top: 15px">More Info</button>
           </div>
         </span>
       </p>
     </div>
     <div class = "bridge-second-section-content" style = "overflow: hidden"><img class = "section-img" src = "../../assets/breadboard.jpg"></div>
   </div>
-  <div style = "text-align: center;">
+  <div style = "text-align: center; margin-top: 50px;">
     <h2 style = "font-family: Cuprum, sans-serif; font-size: 30px;">Some of Our Clients</h2>
-    <div class = "our-clients-wrapper">
+    <!-- <hr style = "width: 60%; min-width: 450px"> -->
+    <div class = " our-clients-wrapper">
       <img class = "our-clients" src = "../../assets/phx-skyharbor.jpg">
-      <img class = "our-clients" src = "../../assets/hartsfield-int.png">
-      <ng-container>
-        <img class = "our-clients" src = "../../assets/newark-int.png">
-        <img class = "our-clients" src = "../../assets/reagen-int.png">
-      </ng-container>
-    </div>
-    <div class = "our-clients-wrapper">
+      <img class = "our-clients" src = "../../assets/hartsfield-jackson-int.jpg">
       <img class = "our-clients" src = "../../assets/newark-int.png">
       <img class = "our-clients" src = "../../assets/reagen-int.png">
     </div>
+
     <div class = "our-clients-wrapper">
       <img class = "our-clients" src = "../../assets/den-int.png">
       <img class = "our-clients" src = "../../assets/RDU-int.jpg">
-      <ng-container>
-        <img class = "our-clients" src = "../../assets/sanFran-int.jpg">
-        <img class = "our-clients" src = "../../assets/oakland-int.png">
-      </ng-container>
-    </div>
-    <div class = "our-clients-wrapper">
       <img class = "our-clients" src = "../../assets/sanFran-int.jpg">
-      <img class = "our-clients" src = "../../assets/oakland-int.png">
+      <img class = "our-clients" src = "../../assets/oakland-int.jpg">
     </div>
 
   </div>
-  <div class = "placeholder-for-footer"></div>
+
+  <div [ngStyle] = "{'margin': '100px auto', 'width': '60%', 'textAlign': 'center'}">
+    <div [ngClass] = "'testimonial'"> 
+      <mat-icon>format_quote</mat-icon>
+      <p><em>“I appreciate everything you have done and the time you have taken to invest in our passenger count technology operations efficiency. It is a joy for our APM Division to work with such a dedicated support group. Again, thanks a million for your support!”</em></p>
+      <p [ngStyle]="{'margin': '0'}"><strong>David Allen</strong></p>
+      <p [ngStyle]="{'margin': '0'}">Hartsfield-Jackson Atlanta International Airport</p>
+    </div>
+  </div>
+  <!-- <div class = "placeholder-for-footer"></div> -->
 </div>
+
+<app-footer></app-footer>

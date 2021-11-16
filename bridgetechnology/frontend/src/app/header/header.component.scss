@@ -187,13 +187,6 @@ a, .drop-down{
   background-color: none;
 }
 
-// @media (max-width: 900px){
-//   a{
-//     font-size: 10px
-//   }
-// }
-
-
 .top-toolbar {
   height: 55px;
 }
@@ -216,5 +209,18 @@ a, .drop-down{
 
 
 .mat-toolbar.mat-primary {
-  background: #212121;
+  // background: #212121;
+  background: #C8CDD0;
+}
+
+a, span, li, button{
+  color: black;
+}
+ 
+::ng-deep .customMatMenu {
+  background: #C8CDD0;
+}
+
+.drop-down-menu-item:hover {
+  background-color: #969696;
 }

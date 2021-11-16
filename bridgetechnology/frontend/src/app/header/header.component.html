@@ -49,6 +49,7 @@
         <div class = "top-header">
           <a href = "#" style = "padding-top: 15px">
             <img src = "https://www.keysight.com/content/dam/keysight/en/img/gnav/keysight-logo.svg">
+            <!-- <img src = "../../assets/bridge.png"> -->
           </a>
           <span class="example-spacer"></span>
           <div style = "margin: auto">
@@ -70,13 +71,13 @@
         <ul class = "ul-menu">
           <li><a href = "#">Home</a></li>
           <li>
-            <a mat-button [matMenuTriggerFor]="menu" class = "drop-down" style = "line-height: initial">Solutions</a>
-            <mat-menu #menu="matMenu">
-              <button mat-menu-item>bCounted APM</button>
-              <button mat-menu-item>bCounted APC</button>
-              <button mat-menu-item>GoCleanMe</button>
-              <button mat-menu-item>Exit Lane Security</button>
-              <button mat-menu-item>Smart Trash Bin</button>
+            <a mat-button [matMenuTriggerFor]="menu" class = "drop-down" style = "line-height: initial; color: black">Solutions</a>
+            <mat-menu #menu="matMenu" class = 'customMatMenu'>
+              <button class = 'drop-down-menu-item' mat-menu-item>bCounted APM</button>
+              <button class = 'drop-down-menu-item' mat-menu-item>bCounted APC</button>
+              <button class = 'drop-down-menu-item' mat-menu-item>GoCleanMe</button>
+              <button class = 'drop-down-menu-item' mat-menu-item>Exit Lane Security</button>
+              <button class = 'drop-down-menu-item' mat-menu-item>Smart Trash Bin</button>
 
             </mat-menu>
           </li>
