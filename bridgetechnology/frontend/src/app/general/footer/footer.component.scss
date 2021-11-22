@@ -1,0 +1,115 @@
+
+.background {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // padding-bottom: 75px;
+    height: 500px;
+    background-image: linear-gradient(
+    140deg,#004872 0%,rgba(41,17,96,0.8) 100%),url(https://bridgetechnology.com/wp-content/uploads/2020/06/it-services-04.jpg)!important;
+};
+
+p {
+    font-family: 'Cuprum', sans-serif;
+    margin: 0;
+}
+
+.contact-area {
+    margin: auto;
+    display: inherit;
+}
+
+@media (max-width: 700px) {
+    .contact-area {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.contact-form {
+    display: block;
+    font-family: 'Cuprum', sans-serif;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Cuprum', sans-serif;
+    margin-left: 30px;
+}
+
+@media (max-width: 700px) {
+    .contact-section {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+        font-size: 13px;
+    }
+
+    .contact-header {
+        font-size: 18px;
+    }
+}
+
+.contact-header {
+    font-size: 25px;
+}
+
+@media (max-width: 700px) {
+    .contact-header {
+        font-size: 18px;
+    }
+}
+
+
+::ng-deep .mat-focused .mat-form-field-label {
+/*change color of label*/
+color: #FFFFFF !important;
+}
+
+::ng-deep.mat-form-field-underline {
+/*change color of underline*/
+background-color: #FFFFFF !important;
+} 
+
+::ng-deep.mat-form-field-ripple {
+/*change color of underline when focused*/
+background-color: #FFFFFF !important;;
+}
+
+.contact-input-item {
+    width: 225px !important; 
+}
+
+.text-area {
+    width: 465px !important;
+}
+
+@media (max-width: 880px) {
+    .contact-input-item {
+        width: 160px !important;
+    }
+}
+
+@media (max-width: 880px) {
+    .text-area {
+        width: 345px !important;
+    }
+}
+
+.all-rights-reserved-flag {
+    width: 100%;
+    height: 50px;
+    background-color: #171717;
+    display: flex;
+    justify-content: center;
+}
+
+contact-mat-icon {
+    color: #FFA727 !important;
+    vertical-align: middle !important;
+    margin-right: 19px !important;
+    margin-bottom: 21px !important;
+    font-size:35px !important;
+}
