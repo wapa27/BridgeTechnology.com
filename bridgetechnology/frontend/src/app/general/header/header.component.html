@@ -1,0 +1,90 @@
+<!-- <mat-toolbar class = "header">
+  <div class = "container">
+    <div class = "logo">
+      <a class = "img-link" href = "/">
+        <img class = "img-logo" src = "https://www.calamp.com/wp-content/uploads/2017/11/logo.svg">
+      </a>
+    </div>
+    <div class = "nav-drop">
+      <ul class = "menu-header">
+        <li><button mat-button class = "mat-button">Our Vision</button></li>
+        <li><button mat-button [matMenuTriggerFor]="menu" class = "mat-button">Solutions</button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>bCounted APM</button>
+            <button mat-menu-item>bCounted APC</button>
+            <button mat-menu-item>GoCleanMe</button>
+            <button mat-menu-item>Exit Lane Security</button>
+            <button mat-menu-item>Smart Trash Bin</button>
+          </mat-menu>
+        </li>
+        <li><button mat-button class = "mat-button">Benefits and Uses</button></li>
+        <li><button mat-button class = "mat-button">Contact Us</button></li>
+        <li><button mat-button class = "mat-button">Login</button></li>
+        <li><button mat-button class = "mat-button"><mat-icon>search</mat-icon></button></li>
+      </ul>
+
+
+    </div>
+    <div class = "nav-drop-small-screen">
+      <ul class = "menu-header" style = "margin: 0; padding: 0; width: 95%">
+        <li><button mat-button class = "mat-button"><mat-icon>menu</mat-icon></button></li>
+        <li style = "padding: 0">
+          <div class = "logo-small-screen">
+            <a class = "img-link" href = "/">
+              <img class = "img-logo" src = "https://www.calamp.com/wp-content/uploads/2017/11/logo.svg">
+            </a>
+          </div>
+        </li>
+        <li><button mat-button class = "mat-button"><mat-icon>search</mat-icon></button></li>
+      </ul>
+    </div>
+  </div>
+</mat-toolbar> -->
+
+
+<div class = "header">
+  <mat-toolbar class = "header-toolbar" color="primary">
+    <mat-toolbar-row class = "top-toolbar">
+      <div class = "top-header-container">
+        <div class = "top-header">
+          <a routerLink = "" style = "padding-top: 15px">
+            <img src = "https://www.keysight.com/content/dam/keysight/en/img/gnav/keysight-logo.svg">
+            <!-- <img src = "../../assets/bridge.png"> -->
+          </a>
+          <span class="example-spacer"></span>
+          <div style = "margin: auto">
+              <span class = "contact-us-wrapper"><a href = "#" style = "margin: 0; padding:0; font-size: 13px">Contact Us</a></span>
+            <span> | </span>
+            <span>
+              <button mat-icon-button class="search-icon">
+                <mat-icon>search</mat-icon>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </mat-toolbar-row>
+
+
+    <mat-toolbar-row class = "secondary-toolbar">
+      <div class = "menu-items">
+        <ul class = "ul-menu">
+          <li><a routerLink = "">Home</a></li>
+          <li>
+            <a mat-button [matMenuTriggerFor]="menu" class = "drop-down" style = "line-height: initial; color: black">Solutions</a>
+            <mat-menu #menu="matMenu" class = 'customMatMenu'>
+              <button class = 'drop-down-menu-item' mat-menu-item>bCounted APM</button>
+              <button class = 'drop-down-menu-item' mat-menu-item>bCounted APC</button>
+              <button class = 'drop-down-menu-item' mat-menu-item>GoCleanMe</button>
+              <button class = 'drop-down-menu-item' mat-menu-item>Exit Lane Security</button>
+              <button class = 'drop-down-menu-item' mat-menu-item>Smart Trash Bin</button>
+
+            </mat-menu>
+          </li>
+          <li><a href = "#">Benefits & Solutions</a></li>
+          <li><a routerLink = '/about-bridge-technology'>About Bridge Technology</a></li>
+        </ul>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>
