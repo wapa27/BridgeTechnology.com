@@ -1,0 +1,35 @@
+
+
+.about-bridge-text-area {
+  width: 50%;
+  line-height: 2;
+  font-size: 20px;
+  margin: auto;
+  text-align: left;
+  font-family: 'Cuprum', "sans-serif", sans-serif;
+  // font-family: 'Cuprum', sans-serif;
+  // text-indent: 25px;
+};
+
+.about-bridge-text-header {
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+}
+
+.about-bridge-sensor {
+  background-image: linear-gradient(140deg,rgba(0,72,114,0.27) 0%,rgba(41,17,96,0.55) 100%);
+  background-color: rgba(0,0,0,0);
+  height: 350px;
+  display: flex;
+}
+
+.about-bridge-image-text {
+  text-align: center;
+  margin: auto;
+  font-size: 45px;
+  color: white;
+  width: 30%;
+  line-height: 1.5;
+  font-family: 'Cuprum', "sans-serif", sans-serif;
+}
