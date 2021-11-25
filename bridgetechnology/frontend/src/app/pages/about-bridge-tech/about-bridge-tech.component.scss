@@ -3,7 +3,7 @@
 .about-bridge-text-area {
   width: 50%;
   line-height: 2;
-  font-size: 20px;
+  font-size: 18px;
   margin: auto;
   text-align: left;
   font-family: 'Cuprum', "sans-serif", sans-serif;
@@ -32,4 +32,57 @@
   width: 30%;
   line-height: 1.5;
   font-family: 'Cuprum', "sans-serif", sans-serif;
+}
+
+@media (max-width: 800px) {
+  .about-bridge-text-area {
+    width: 70%;
+  }
+}
+
+.product-button {
+  width: 19vw;
+  height: 140px;
+  background-color: #FFA727;
+  border-radius: 0%;
+}
+
+.product-button-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 0 8%;
+}
+
+.large-screen-product-button-display {
+  display: unset;
+}
+
+@media (max-width: 800px) {
+  .large-screen-product-button-display {
+    display: none;
+  }
+}
+
+
+.small-screen-product-button-display {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .small-screen-product-button-display {
+    display: unset;
+  }
+}
+
+
+.product-button-wrapper-small-screen {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-button-small-screen {
+  width: 80vw;
+  height: 75px;
+  margin: 15px auto;
 }
