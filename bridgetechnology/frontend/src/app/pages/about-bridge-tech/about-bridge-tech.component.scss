@@ -86,3 +86,67 @@
   height: 75px;
   margin: 15px auto;
 }
+
+.modem-background {
+  background-image: linear-gradient(
+    140deg, #004872 0%, rgba(41, 17, 96, 0.8) 100%), url(https://bridgetechnology.com/wp-content/uploads/2020/07/it-services-09.jpg) !important;
+        height: 550px;
+        width: 90%;
+        /* margin: auto; */
+        border-top-left-radius: 25% 300px;
+        border-bottom-left-radius: 25% 308px;
+        /* margin-left: 188px; */
+        float: right;
+        margin-bottom: 55px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .modem-background{
+    height: 225px;
+    border-top-left-radius: 25% 125px;
+    border-bottom-left-radius: 25% 125px;
+  }
+
+}
+
+.image-overlay {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  font-family: "Cuprum", "sans-serif", sans-serif;
+}
+
+.image-overlay-header {
+  margin: 0; padding: 0;
+  font-size: 70px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.image-overlay-body {
+  margin: 0;
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  .image-overlay-header {
+    font-size: 35px
+  }
+}
+
+
+@media (max-width: 900px) {
+  .image-overlay-body {
+    font-size: 15px
+  }
+}
+
+
+.strategic-partners {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
