@@ -7,6 +7,7 @@
   margin: auto;
   text-align: left;
   font-family: 'Cuprum', "sans-serif", sans-serif;
+  margin-top: 80px;
   // font-family: 'Cuprum', sans-serif;
   // text-indent: 25px;
 };
@@ -15,6 +16,7 @@
   font-weight: 300;
   font-size: 30px;
   text-align: center;
+  margin-top: 40px;
 }
 
 .about-bridge-sensor {
@@ -79,10 +81,11 @@
 .product-button-wrapper-small-screen {
   display: flex;
   flex-direction: column;
+  margin: 40px 0;
 }
 
 .product-button-small-screen {
-  width: 80vw;
+  width: 55vw;
   height: 75px;
   margin: 15px auto;
 }
@@ -97,7 +100,7 @@
         border-bottom-left-radius: 25% 308px;
         /* margin-left: 188px; */
         float: right;
-        margin-bottom: 55px;
+        margin-bottom: 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -149,4 +152,114 @@
   display: inline-block;
   width: 100%;
   text-align: center;
+  margin-bottom: 120px;
+}
+
+
+.our-clients-wrapper {
+  display: flex;
+  justify-content: space-around;
+  // flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+
+.our-clients-wrapper-bottom {
+  display: flex;
+  justify-content: space-around;
+  // flex-wrap: wrap;
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+@media (max-width: 1300px) {
+  .our-clients-wrapper {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 1300px) {
+  .our-clients-wrapper-bottom {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+
+
+.our-clients {
+  width: 14%;
+  margin: auto;
+}
+
+.our-clients-bottom {
+  width: 10%;
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  .our-clients {
+    width: 22%;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .our-clients-bottom {
+    width: 17%;
+  }
+}
+
+
+.why-choose-us-wrapper {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.why-choose-us-text-area {
+  display: flex;
+  justify-content: center;
+}
+
+// .text-area {
+//   width: 40%;
+// }
+
+.text-area-wrapper {
+  width: 45%;
+  margin-top: 30px;
+  margin-right: 55px;
+
+}
+
+.bullet-point-wrapper {
+  width: 35%;
+}
+
+.bullet-points {
+  text-align: left;
+}
+
+.text-area {
+  text-indent: 25px;
+  text-align: left;
+  line-height: 1.75;
+  font-weight: 100;
+
+}
+
+.mat-list {
+  padding: 0;
+}
+
+.bullet-point {
+  margin: 10px 0;
+  font-size: 25px;
+  font-weight:100;
+  font-family: "Cuprum", "sans-serif", sans-serif;
 }
