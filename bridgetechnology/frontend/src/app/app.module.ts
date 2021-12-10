@@ -17,6 +17,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatOptionModule } from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list'
 import { AboutBridgeTechComponent } from './pages/about-bridge-tech/about-bridge-tech.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
@@ -45,6 +46,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     MatOptionModule,
     MatButtonModule,
     MatSelectModule,
+    MatListModule,
     FontAwesomeModule
   ],
   providers: [],

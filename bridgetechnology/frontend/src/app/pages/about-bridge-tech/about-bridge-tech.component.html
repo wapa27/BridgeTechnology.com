@@ -14,21 +14,23 @@
 </div>
 <div class = "large-screen-product-button-display">
   <div class = "product-button-wrapper" style = "margin: 100px 0 55px 0">
-      <button mat-button color="primary" class = "product-button">Primary</button>
-      <button mat-button color="primary" class = "product-button" style="background-color: #F1F1F1">Primary</button>
-      <button mat-button color="primary" class = "product-button" style = "background-color: #FFFFFF; border: 1px solid #D8DCE1;">Primary</button>
+      <button mat-button color="primary" class = "product-button"> <mat-icon> train</mat-icon>Automatic People Mover</button>
+      <button mat-button color="primary" class = "product-button" style="background-color: #F1F1F1"><mat-icon>people</mat-icon>Automatic Passenger Counting</button>
+      <button mat-button color="primary" class = "product-button" style = "background-color: #FFFFFF; border: 1px solid #D8DCE1;"><mat-icon>wc</mat-icon>Restroom Management</button>
   </div>
   <div class = "product-button-wrapper" style = "padding: 0 17vw; margin: 0 0 100px 0;">
-      <button mat-button color="primary" class = "product-button">Primary</button>
-      <button mat-button color="primary" class = "product-button" style = "background-color: #FFFFFF; border: 1px solid #D8DCE1;">Primary</button>
+      <button mat-button color="primary" class = "product-button"><mat-icon>restore_from_trash</mat-icon>Trash Bin Monitoring</button>
+      <button mat-button color="primary" class = "product-button" style = "background-color: #FFFFFF; border: 1px solid #D8DCE1;"><mat-icon> directions_walk</mat-icon>Exit Lane Monitoring</button>
   </div>
 </div>
 
 <div class = "small-screen-product-button-display">
   <div class = "product-button-wrapper-small-screen">
-    <button mat-button color="primary" class = "product-button-small-screen" style="background-color: #FFA727">primary</button>
-    <button mat-button color="primary" class = "product-button-small-screen" style="background-color: #F1F1F1">primary</button>
-    <button mat-button color="primary" class = "product-button-small-screen" style = "background-color: #FFFFFF; border: 1px solid #D8DCE1;">primary</button>
+    <button mat-button color="primary" class = "product-button-small-screen" style="background-color: #FFA727"><mat-icon> train</mat-icon>Automatic People Mover</button>
+    <button mat-button color="primary" class = "product-button-small-screen" style="background-color: #F1F1F1"><mat-icon>people</mat-icon>Automatic Passenger Counting</button>
+    <button mat-button color="primary" class = "product-button-small-screen" style = "background-color: #FFFFFF; border: 1px solid #D8DCE1;"><mat-icon>wc</mat-icon>Restroom Management</button>
+    <button mat-button color="primary" class = "product-button-small-screen" style="background-color: #FFA727"><mat-icon>restore_from_trash</mat-icon>Trash Bin Monitoring</button>
+    <button mat-button color="primary" class = "product-button-small-screen" style="background-color: #F1F1F1"><mat-icon>directions_walk</mat-icon>Exit Lane Monitoring</button>
   </div>
 </div>
 <div class = "modem-background">
@@ -39,8 +41,53 @@
   </div>
 </div>
 <div class = "strategic-partners">
-  <h4 style = "font-size: 25px">Our Strategic Partners</h4>
+  <h2 style = "font-family: Cuprum, sans-serif; font-size: 30px;">Our Strategic Partners</h2>
+  <div class = " our-clients-wrapper">
+    <img class = "our-clients" src = "../../../../assets/strategicPartners/AT&T.png">
+    <img class = "our-clients" src = "../../../../assets/strategicPartners/Verizon.png">
+    <img class = "our-clients" src = "../../../../assets/strategicPartners/CalAmp.png">
+    <img class = "our-clients" src = "../../../../assets/strategicPartners/iris.png">
+
+  </div>
+
+  <div class = "our-clients-wrapper-bottom">
+    <img class = "our-clients-bottom" src = "../../../../assets/strategicPartners/bombardier.png">
+    <img class = "our-clients-bottom" src = "../../../../assets/strategicPartners/KORE.png">
+    <img class = "our-clients-bottom" src = "../../../../assets/strategicPartners/Horton.png">
+  </div>
 </div>
+<div class = "why-choose-us-wrapper">
+  <h2 style = "font-family: Cuprum, sans-serif; font-size: 30px;">Why Choose Us</h2>
+  <div class = "why-choose-us-text-area">
+    <div class = "text-area-wrapper">
+      <div class = "text-area">
+        We know no two sites are the same and one size doesn’t fit all. We use state of the art technology and our strategic partners to create a solution catered to you. Our solutions help provide you with the real-time data and information you need to make your processes more efficient and effective.
+      </div>
+    </div>
+    <div class = "bullet-point-wrapper">
+      <div class = "bullet-points">
+        <!-- <ul>
+          <li>
+            Real-time Data Streams
+          </li>
+          <li>
+            Passenger Statistics
+          </li>
+          <li>
+            Capacity and Employee Planning
+          </li>
+        </ul> -->
+        <mat-list role="list" class = "bullet-points">
+          <mat-list-item role="listitem" class = "bullet-point"><mat-icon style = "font-size: 30px; color: #FFA727; margin: 0 20px 5px 0;">check_circle</mat-icon>Real-time Data Streams</mat-list-item>
+          <mat-list-item role="listitem" class = "bullet-point"><mat-icon style = "font-size: 30px; color: #FFA727; margin: 0 20px 5px 0;">check_circle</mat-icon>Passenger Statistics</mat-list-item>
+          <mat-list-item role="listitem" class = "bullet-point"><mat-icon style = "font-size: 30px; color: #FFA727; margin: 0 20px 5px 0;">check_circle</mat-icon>Capacity and Employee Planning</mat-list-item>
+        </mat-list>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 <app-footer></app-footer>
