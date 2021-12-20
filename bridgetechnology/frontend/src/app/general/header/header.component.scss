@@ -216,11 +216,160 @@ a, .drop-down{
 a, span, li, button{
   color: black;
 }
- 
+
 ::ng-deep .customMatMenu {
-  background: #C8CDD0;
+  background: #FFFFFF;
+  display: none;
+}
+
+@media (max-width: 700px) {
+  ::ng-deep .customMatMenu {
+    display: unset;
+  }
 }
 
 .drop-down-menu-item:hover {
   background-color: #969696;
+}
+
+.header-drop-down-button {
+  height: 100%;
+  width:20%;
+  border-radius: 0;
+  border-right:none;
+  text-align: left;
+  padding-left: 2%;
+}
+
+@media (max-width: 950px) {
+  .header-drop-down-button {
+    padding-left: 1%;
+  }
+}
+
+.secondary-drop-down {
+  width: 100vw; display: flex; height: 125px; position: absolute;
+  visibility: visible;
+  // opacity: 1;
+  // transition: visibility 0s, opacity 0.5s linear;
+  opacity: 1;
+  transition: opacity 0.25s linear;
+}
+
+.secondary-drop-down-hidden {
+  width: 100vw; display: flex; height: 125px; position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.25s, opacity 0.25s linear;
+  // display: none;
+}
+
+@media (max-width: 700px) {
+  .secondary-drop-down {
+    display: none;
+  }
+}
+
+.header-button {
+  font-size: 18px;
+  margin: 0;
+}
+
+@media (max-width: 975px) {
+  .header-button {
+    font-size: 14px;
+  }
+}
+
+.header-button-margin {
+  margin-right: 8%;
+  padding: 0;
+}
+
+.header-button-margin:hover {
+  color: #3F88C5;
+}
+
+.img-link {
+  margin-left: 20%
+}
+
+.header-img {
+  width: 200px;
+}
+
+@media (max-width: 975px) {
+  .header-img {
+    width: 140px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .img-link {
+    margin-left: 0;
+  }
+}
+
+.right-header-xl {
+  display: unset;
+}
+
+.right-header-xs {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .right-header-xl {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .right-header-xs {
+    display: unset;
+  }
+}
+
+.left-header-wrapper {
+  width: 50%; padding-top: 7px;
+}
+
+@media (max-width: 860px) {
+  .left-header-wrapper {
+    width: 40%;
+  }
+}
+
+.button-img {
+  width: 30px; position: absolute; top: 18px;
+}
+
+@media (max-width: 950px) {
+  .button-img {
+    top: 5px;
+  }
+}
+
+.button-paragraph {
+  line-height: 1.5; margin: 0; position: absolute; top: 62px; white-space: normal;
+}
+
+.button-span {
+  color: #3F88C5; font-size: 16px;
+}
+
+.button-span-second {
+  font-size: 14px;
+}
+
+@media (max-width: 950px) {
+  .button-span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 950px) {
+  .button-span-second {
+    font-size: 12px;
+  }
 }

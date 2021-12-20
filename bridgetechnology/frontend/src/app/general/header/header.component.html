@@ -1,46 +1,5 @@
-<!-- <mat-toolbar class = "header">
-  <div class = "container">
-    <div class = "logo">
-      <a class = "img-link" href = "/">
-        <img class = "img-logo" src = "https://www.calamp.com/wp-content/uploads/2017/11/logo.svg">
-      </a>
-    </div>
-    <div class = "nav-drop">
-      <ul class = "menu-header">
-        <li><button mat-button class = "mat-button">Our Vision</button></li>
-        <li><button mat-button [matMenuTriggerFor]="menu" class = "mat-button">Solutions</button>
-          <mat-menu #menu="matMenu">
-            <button mat-menu-item>bCounted APM</button>
-            <button mat-menu-item>bCounted APC</button>
-            <button mat-menu-item>GoCleanMe</button>
-            <button mat-menu-item>Exit Lane Security</button>
-            <button mat-menu-item>Smart Trash Bin</button>
-          </mat-menu>
-        </li>
-        <li><button mat-button class = "mat-button">Benefits and Uses</button></li>
-        <li><button mat-button class = "mat-button">Contact Us</button></li>
-        <li><button mat-button class = "mat-button">Login</button></li>
-        <li><button mat-button class = "mat-button"><mat-icon>search</mat-icon></button></li>
-      </ul>
 
-
-    </div>
-    <div class = "nav-drop-small-screen">
-      <ul class = "menu-header" style = "margin: 0; padding: 0; width: 95%">
-        <li><button mat-button class = "mat-button"><mat-icon>menu</mat-icon></button></li>
-        <li style = "padding: 0">
-          <div class = "logo-small-screen">
-            <a class = "img-link" href = "/">
-              <img class = "img-logo" src = "https://www.calamp.com/wp-content/uploads/2017/11/logo.svg">
-            </a>
-          </div>
-        </li>
-        <li><button mat-button class = "mat-button"><mat-icon>search</mat-icon></button></li>
-      </ul>
-    </div>
-  </div>
-</mat-toolbar> -->
-
+<!--
 
 <div class = "header">
   <mat-toolbar class = "header-toolbar" color="primary">
@@ -49,7 +8,6 @@
         <div class = "top-header">
           <a routerLink = "" style = "padding-top: 15px">
             <img src = "https://www.keysight.com/content/dam/keysight/en/img/gnav/keysight-logo.svg">
-            <!-- <img src = "../../assets/bridge.png"> -->
           </a>
           <span class="example-spacer"></span>
           <div style = "margin: auto">
@@ -88,3 +46,50 @@
     </mat-toolbar-row>
   </mat-toolbar>
 </div>
+  -->
+
+  <!-- <p> -->
+  <div (mouseenter)="this.isDropDown = false;" (mouseleave) = "this.isDropDown = false;" style = "overflow: hidden;">
+    <mat-toolbar style = "display: flex; flex-direction: row; height: 125px; background-color: #FFFFFF">
+      <div class = "left-header-wrapper" (mouseenter)="this.isDropDown = false;">
+        <a routerLink="" class = "img-link">
+          <img src = "../../../assets/BridgeTech-Logo.png" class = "header-img" >
+        </a>
+      </div>
+      <div style ="width: 50%;">
+        <div class = "right-header-xl">
+          <button mat-flat-button (mouseenter)="this.isDropDown = true;" class = "header-button header-button-margin" style = "height: 100%" disableRipple="true">Our Automated Solutions <mat-icon style = "transform: scale(0.75)">keyboard_arrow_down</mat-icon></button>
+          <!-- <button>Our Automated Solutions</button> -->
+          <button mat-flat-button (mouseenter)="this.isDropDown = false;" class = "header-button header-button-margin" style = "height: 100%" disableRipple="true">About Us</button>
+          <button mat-raised-button (mouseenter)="this.isDropDown = false;" color="primary" class = "header-button">Contact Us</button>
+        </div>
+      </div>
+      <div class = "right-header-xs">
+        <button mat-button [matMenuTriggerFor]="menu"><mat-icon style = "transform: scale(1.75);">menu</mat-icon></button>
+          <mat-menu #menu="matMenu" class = 'customMatMenu'>
+            <button mat-menu-item [matMenuTriggerFor]="solutions">Solutions</button>
+            <button mat-menu-item>About Us</button>
+            <button mat-menu-item>Contact Us</button>
+          </mat-menu>
+          <mat-menu #solutions="matMenu" class = 'customMatMenu'>
+            <button class = 'drop-down-menu-item' mat-menu-item>bCounted APM</button>
+            <button class = 'drop-down-menu-item' mat-menu-item>bCounted APC</button>
+            <button class = 'drop-down-menu-item' mat-menu-item>GoCleanMe</button>
+            <button class = 'drop-down-menu-item' mat-menu-item>Exit Lane Security</button>
+            <button class = 'drop-down-menu-item' mat-menu-item>Smart Trash Bin</button>
+          </mat-menu>
+      </div>
+     <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button> -->
+
+  </mat-toolbar>
+  <!-- </p> -->
+<div [ngClass]="this.isDropDown ? 'secondary-drop-down' : 'secondary-drop-down-hidden'" (mouseenter)="this.isDropDown = true">
+  <button mat-raised-button class = "header-drop-down-button"><img class = "button-img" src = "../../../assets/stickFigures/BridgeTech-Icon-APM.png"><br><p class = "button-paragraph"><span class = "button-span">bCounted APM</span> <br><span class = "button-span-second">Automatic People Mover</span></p></button>
+  <button mat-raised-button class = "header-drop-down-button"><img class = "button-img" src = "../../../assets/stickFigures/BridgeTech-Icon-APC.png" style = "width: 41px"><br><p class = "button-paragraph"><span class = "button-span">bCounted APC</span> <br><span class = "button-span-second">Automatic Passenger Counter</span></p></button>
+  <button mat-raised-button class = "header-drop-down-button"><img class = "button-img" src = "../../../assets/stickFigures/BridgeTech-Icon-ExitLane.png"  style = "width: 34px"><br><p class = "button-paragraph"><span class = "button-span">Exit Lane Solutions</span> <br><span class = "button-span-second">Exit Lane Monitoring</span></p></button>
+  <button mat-raised-button class = "header-drop-down-button"><img class = "button-img" src = "../../../assets/stickFigures/BridgeTech-Icon-RestroomManagement.png"><br><p class = "button-paragraph"><span class = "button-span">GoCleanMe</span> <br><span class = "button-span-second">Restroom Management</span></p></button>
+  <button mat-raised-button class = "header-drop-down-button"><img class = "button-img" src = "../../../assets/stickFigures/BridgeTech-Icon-TrashBin.png"><br><p class = "button-paragraph"><span class = "button-span">Smart Trash Bin</span> <br><span class = "button-span-second">Trash Bin Monitoring</span></p></button>
+</div>
+  </div>
