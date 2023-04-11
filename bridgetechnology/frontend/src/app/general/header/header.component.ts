@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+  isDropDown : boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toggleDropDown(): void {
+    this.isDropDown = !this.isDropDown;
+    console.log(this.isDropDown);
+  }
 }
