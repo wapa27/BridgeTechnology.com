@@ -10,10 +10,16 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log("header present")
   }
 
   toggleDropDown(): void {
     this.isDropDown = !this.isDropDown;
-    console.log(this.isDropDown);
+  }
+
+  public scrollToFooter() {
+      console.log("scrolling to bottom");
+      // window.scrollTo(0,document.body.scrollHeight);
+      document.getElementById("footer")?.scrollIntoView({behavior: 'smooth', block: 'end', inline: 'nearest'});
   }
 }
