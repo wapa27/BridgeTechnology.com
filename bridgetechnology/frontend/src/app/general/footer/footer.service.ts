@@ -12,17 +12,15 @@ export class FooterService implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(){
-    this.sendEmail();
   }
 
-  public sendEmail(): void {
-    let simpleEmail: SimpleEmail = {
-      name: 'Warren Payne',
-      email: '30545WarrenPayne@gmail.com',
-      phoneNumber: '714-337-3176',
-      message: 'Hello world'
-    };
+  public sendEmail(name: string, email: string, phoneNumber: string, message: string): void {
+    const simpleEmail: SimpleEmail = new SimpleEmail;
+    simpleEmail.name = name;
+    simpleEmail.email = email;
+    simpleEmail.phoneNumber = phoneNumber;
+    simpleEmail.message = message;
 
-    this.http.post(this.baseUrl, simpleEmail).subscribe(() => 'called email service from frontend');
+    this.http.post(this.baseUrl, simpleEmail).subscribe(result => console.log(result));
   }
 }

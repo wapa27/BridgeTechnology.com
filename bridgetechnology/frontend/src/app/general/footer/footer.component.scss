@@ -26,6 +26,21 @@ p {
     }
 }
 
+.contact-form-submit-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 700px) {
+    .contact-form-submit-button {
+        width: 80%;
+        display: flex;
+        justify-content: left;
+        margin-bottom: 25px
+    }
+}
+
 .contact-form {
     display: block;
     font-family: 'Cuprum', sans-serif;

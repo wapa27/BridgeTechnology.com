@@ -8,7 +8,6 @@ public class BridgetechnologyApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BridgetechnologyApplication.class, args);
-		System.out.println("working fine");
 	}
 
 }

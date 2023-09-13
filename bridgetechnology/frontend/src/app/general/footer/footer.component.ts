@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FooterService } from './footer.service';
@@ -10,12 +10,26 @@ import { FooterService } from './footer.service';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
-export class FooterComponent implements OnInit {
-  contactUsFormControl = new FormControl('');
+export class FooterComponent {
+  clientName: string;
+  clientEmail: string;
+  clientPhone: string;
+  clientMessage: string;
+
   constructor(private footerService: FooterService) { }
 
-  ngOnInit(): void {
-    this.footerService.sendEmail();
+  sendEmail(): void{
+    if (this.clientName && this.clientEmail && this.clientPhone && this.clientMessage) {
+      this.footerService.sendEmail(this.clientName, this.clientEmail, this.clientPhone, this.clientMessage);
+      this.clearFields();
+    }
+  }
+
+  private clearFields(): void {
+    this.clientName = '';
+    this.clientEmail = '';
+    this.clientPhone = '';
+    this.clientMessage = '';
   }
 
 }
