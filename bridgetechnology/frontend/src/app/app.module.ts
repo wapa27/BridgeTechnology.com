@@ -20,6 +20,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list'
 import { AboutBridgeTechComponent } from './pages/about-bridge-tech/about-bridge-tech.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { FooterService } from './general/footer/footer.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -47,9 +49,12 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     MatButtonModule,
     MatSelectModule,
     MatListModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    FooterService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

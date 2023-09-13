@@ -1,3 +1,4 @@
+package com.bridgetechnology.bridgetechnology.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -6,8 +7,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class SimpleEmail {
-    String name;
-    String email;
-    String phoneNumber;
-    String message;
+    public String name;
+    public String email;
+    public String phoneNumber;
+    public String message;
 }

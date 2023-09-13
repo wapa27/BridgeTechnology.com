@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { FooterService } from './footer.service';
 
 
 
@@ -11,9 +12,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 })
 export class FooterComponent implements OnInit {
   contactUsFormControl = new FormControl('');
-  constructor() { }
+  constructor(private footerService: FooterService) { }
 
   ngOnInit(): void {
+    this.footerService.sendEmail();
   }
 
 }
