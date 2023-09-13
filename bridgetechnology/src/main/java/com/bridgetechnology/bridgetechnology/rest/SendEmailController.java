@@ -26,9 +26,8 @@ public class SendEmailController {
 
     @GetMapping("/send-email")
     public ResponseEntity<Object> sendEmail(@RequestBody SimpleEmail simpleEmail) {
-        System.out.println("Reaching Email Service");
         try {
-            emailService.sendEmail("30545WarrenPayne@gmail.com", "Testing Java Mail", "This is a test of Spring emails");
+            emailService.sendEmail(simpleEmail.name, simpleEmail.email, simpleEmail.phoneNumber, simpleEmail.message);
             return ResponseEntity.ok("{\"message\": \"Email successfully sent\"}");
         } catch (Exception exception) {
             exception.printStackTrace();

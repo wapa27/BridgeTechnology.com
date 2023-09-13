@@ -6,29 +6,32 @@
             <p style = "color: white">
                 <mat-form-field appearance="legacy" class = "contact-input-item">
                 <mat-label style = "color: white; font-family: 'Cuprum', sans-serif;">Name</mat-label>
-                <input matInput  stlye = "color: white">
+                <input matInput [(ngModel)]="clientName" stlye = "color: white">
                 <!-- <mat-hint>Hint</mat-hint> -->
                 </mat-form-field>
             </p>
             <p style = "color: white">
                 <mat-form-field appearance="legacy" class = "contact-input-item" style = "margin-right: 15px">
                 <mat-label style = "color: white; font-family: 'Cuprum', sans-serif;">Email</mat-label>
-                <input matInput  stlye = "color: white" type = "email">
+                <input matInput matInput [(ngModel)]="clientEmail" stlye = "color: white" type = "email">
                 <!-- <mat-hint>Hint</mat-hint> -->
                 </mat-form-field>
                 <mat-form-field appearance="legacy" class = "contact-input-item">
                 <mat-label style = "color: white; font-family: 'Cuprum', sans-serif;">Phone</mat-label>
-                <input matInput  stlye = "color: white" type = "tel">
+                <input matInput [(ngModel)]="clientPhone" matInput  stlye = "color: white" type = "tel">
                 <!-- <mat-hint>Hint</mat-hint> -->
                 </mat-form-field>
             </p>
             <p style = "color: white">
                 <mat-form-field appearance="legacy" class = "text-area">
                     <mat-label style = "color: white; font-family: 'Cuprum', sans-serif;">Message</mat-label>
-                    <textarea matInput style = "color: white"></textarea>
+                    <textarea matInput matInput [(ngModel)]="clientMessage" style = "color: white"></textarea>
                 <!-- <mat-hint>Hint</mat-hint> -->
                 </mat-form-field>
             </p>
+            <div class = "contact-form-submit-button">
+                <button  mat-raised-button (click)="sendEmail()" style = "background: white; height: 40px; width: 90%; margin-top: 15px; font-size: 15px">Submit</button>
+            </div>  
         </div>
         <div class = "contact-section">
             <div style = "margin-bottom: 20px;"><mat-icon style = "color: #FFA727; vertical-align: middle; margin-right: 25px; margin-bottom: 21px; font-size:35px">location_on</mat-icon><span class = "contact-header">Office</span><p style = "padding-left: 45px; line-height: 2">5232 North 43rd Place <br> Phoenix, AZ. 85018, USA</p></div>
