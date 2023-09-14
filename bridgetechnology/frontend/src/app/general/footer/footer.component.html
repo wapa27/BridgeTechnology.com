@@ -1,47 +1,57 @@
 <div id="footer" class='background'>
-    <div class = "contact-area">
-        <div class = "contact-form">
-            <h2 style = "color: white; font-size: 2em; margin-top: 0">Send us a message!</h2>
-            <!-- <input type="text" [formControl] = "contactUsFormControl"> -->
-            <p style = "color: white">
-                <mat-form-field appearance="legacy" class = "contact-input-item">
-                <mat-label style = "color: white; font-family: 'Cuprum', sans-serif;">Name</mat-label>
-                <input matInput [(ngModel)]="clientName" stlye = "color: white">
-                <!-- <mat-hint>Hint</mat-hint> -->
-                </mat-form-field>
-            </p>
-            <p style = "color: white">
-                <mat-form-field appearance="legacy" class = "contact-input-item" style = "margin-right: 15px">
-                <mat-label style = "color: white; font-family: 'Cuprum', sans-serif;">Email</mat-label>
-                <input matInput matInput [(ngModel)]="clientEmail" stlye = "color: white" type = "email">
-                <!-- <mat-hint>Hint</mat-hint> -->
-                </mat-form-field>
-                <mat-form-field appearance="legacy" class = "contact-input-item">
-                <mat-label style = "color: white; font-family: 'Cuprum', sans-serif;">Phone</mat-label>
-                <input matInput [(ngModel)]="clientPhone" matInput  stlye = "color: white" type = "tel">
-                <!-- <mat-hint>Hint</mat-hint> -->
-                </mat-form-field>
-            </p>
-            <p style = "color: white">
-                <mat-form-field appearance="legacy" class = "text-area">
-                    <mat-label style = "color: white; font-family: 'Cuprum', sans-serif;">Message</mat-label>
-                    <textarea matInput matInput [(ngModel)]="clientMessage" style = "color: white"></textarea>
-                <!-- <mat-hint>Hint</mat-hint> -->
-                </mat-form-field>
-            </p>
-            <div class = "contact-form-submit-button">
-                <button  mat-raised-button (click)="sendEmail()" style = "background: white; height: 40px; width: 90%; margin-top: 15px; font-size: 15px">Submit</button>
-            </div>  
-        </div>
-        <div class = "contact-section">
-            <div style = "margin-bottom: 20px;"><mat-icon style = "color: #FFA727; vertical-align: middle; margin-right: 25px; margin-bottom: 21px; font-size:35px">location_on</mat-icon><span class = "contact-header">Office</span><p style = "padding-left: 45px; line-height: 2">5232 North 43rd Place <br> Phoenix, AZ. 85018, USA</p></div>
-            <div style = "margin-bottom: 20px;"><mat-icon style = "color: #FFA727; vertical-align: middle; margin-right: 25px; margin-bottom: 21px; font-size:35px">email</mat-icon><span class = "contact-header">Email</span><p style = "padding-left: 45px; line-height: 2">ian@bridgetech.net</p></div>
-            <div style = "margin-bottom: 20px;"><mat-icon style = "color: #FFA727; vertical-align: middle; margin-right: 25px; margin-bottom: 21px; font-size:35px">local_phone</mat-icon><span class = "contact-header">Call</span><p style = "padding-left: 45px; line-height: 2">(602) 952-2526
-
-            </p></div>
-            <!-- <div><mat-icon>email</mat-icon></div>
-            <div><mat-icon>local_phone</mat-icon></div> -->
-        </div>
+  <div class="contact-area">
+    <div class="contact-form">
+      <h2 style="color: white; font-size: 2em; margin-top: 0">Send us a message!</h2>
+      <!-- Email Form  -->
+      <p class="mat-form-wrapper">
+        <mat-form-field appearance="legacy" class="contact-input-item">
+          <mat-label class="mat-label">Name</mat-label>
+          <input matInput [(ngModel)]="clientName" class="mat-form-wrapper">
+        </mat-form-field>
+      </p>
+      <p class="mat-form-wrapper ">
+        <mat-form-field appearance="legacy" class="contact-input-item" style="margin-right: 15px">
+          <mat-label class="mat-label">Email</mat-label>
+          <input matInput matInput [(ngModel)]="clientEmail" class="mat-form-wrapper" type="email">
+        </mat-form-field>
+        <mat-form-field appearance="legacy" class="contact-input-item">
+          <mat-label class="mat-label">Phone</mat-label>
+          <input matInput [(ngModel)]="clientPhone" matInput class="mat-form-wrapper" type="tel">
+        </mat-form-field>
+      </p>
+      <p class="mat-form-wrapper ">
+        <mat-form-field appearance="legacy" class="text-area">
+          <mat-label class="mat-label">Message</mat-label>
+          <textarea matInput matInput [(ngModel)]="clientMessage" class="mat-form-wrapper"></textarea>
+        </mat-form-field>
+      </p>
+      <div class="contact-form-submit-button">
+        <button mat-raised-button (click)="sendEmail()"
+          style="background: white; height: 40px; width: 90%; margin-top: 15px; font-size: 15px">Submit</button>
+      </div>
+      <!-- End of Email Form  -->
     </div>
+    <!-- Additional Details Section -->
+    <div class="contact-section">
+      <div class="margin-bottom"><mat-icon class="contact-field-wrapper">location_on</mat-icon><span
+          class="contact-header">Office</span>
+        <p class="contact-field-span-wrapper">5232 North 43rd Place <br> Phoenix, AZ. 85018, USA</p>
+      </div>
+      <div class="margin-bottom"><mat-icon class="contact-field-wrapper">email</mat-icon><span
+          class="contact-header">Email</span>
+        <p class="contact-field-span-wrapper">ian@bridgetech.net</p>
+      </div>
+      <div class="margin-bottom"><mat-icon class="contact-field-wrapper">local_phone</mat-icon><span
+          class="contact-header">Call</span>
+        <p class="contact-field-span-wrapper">(602) 952-2526
+        </p>
+      </div>
+    </div>
+    <!-- End of Additional Details Section -->
+  </div>
 </div>
-<div class = "all-rights-reserved-flag"><p style = "color: #666666; font-size: 12px; display: flex; flex-direction: column; justify-content: center;"><strong>Copyright 2020. Bridge Technology.</strong></p></div>
+<div class="all-rights-reserved-flag">
+  <p style="color: #666666; font-size: 12px; display: flex; flex-direction: column; justify-content: center;">
+    <strong>Copyright 2020. Bridge Technology.</strong>
+  </p>
+</div>
