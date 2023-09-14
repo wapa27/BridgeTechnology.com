@@ -1,25 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
-  isDropDown : boolean = false;
+export class HeaderComponent {
+  isDropDown: boolean = false;
   constructor() { }
-
-  ngOnInit(): void {
-    console.log("header present")
-  }
 
   toggleDropDown(): void {
     this.isDropDown = !this.isDropDown;
   }
 
+  // Scrolls to page Footer
   public scrollToFooter() {
-      console.log("scrolling to bottom");
-      // window.scrollTo(0,document.body.scrollHeight);
-      document.getElementById("footer")?.scrollIntoView({behavior: 'smooth', block: 'end', inline: 'nearest'});
+    document.getElementById("footer")?.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
   }
 }

@@ -3,7 +3,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    // padding-bottom: 75px;
     height: 500px;
     background-image: linear-gradient(
     140deg,#004872 0%,rgba(41,17,96,0.8) 100%),url(https://bridgetechnology.com/wp-content/uploads/2020/06/it-services-04.jpg)!important;
@@ -86,7 +85,7 @@ color: #FFFFFF !important;
 ::ng-deep.mat-form-field-underline {
 /*change color of underline*/
 background-color: #FFFFFF !important;
-} 
+}
 
 ::ng-deep.mat-form-field-ripple {
 /*change color of underline when focused*/
@@ -94,7 +93,7 @@ background-color: #FFFFFF !important;;
 }
 
 .contact-input-item {
-    width: 225px !important; 
+    width: 225px !important;
 }
 
 .text-area {
@@ -127,4 +126,30 @@ contact-mat-icon {
     margin-right: 19px !important;
     margin-bottom: 21px !important;
     font-size:35px !important;
+}
+
+.mat-form-wrapper {
+  color: white;
+}
+
+.mat-label {
+  color: white;
+  font-family: 'Cuprum', sans-serif;
+}
+
+.contact-field-wrapper {
+  color: #FFA727;
+  vertical-align: middle;
+  margin-right: 25px;
+  margin-bottom: 21px;
+  font-size:35px
+}
+
+.contact-field-span-wrapper {
+  padding-left: 45px;
+  line-height: 2
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
 }
